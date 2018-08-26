@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+			数组.find() 从数组中查找第一个符合条件的元素并且作为返回值返回
+		*/
+		
+		var ary = ['a', 'b', 'c'];
+
+		/*function find (el) {
+
+			for (var i = 0; i < ary.length; i++) {
+
+				if (ary[i] == el) {
+
+					return ary[i];
+				}
+
+			}
+
+		}
+
+		var result = find('b');
+
+		console.log(result);*/
+
+		var result = ary.find(function (item) {
+			return item == 'b';
+		});
+
+		console.log(result);
+
+	</script>
+</body>
+</html> 
